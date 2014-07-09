@@ -14,9 +14,9 @@ shinyUI(bootstrapPage(
 	textOutput("connection"),
         h4("Show custom headers"),
 	helpText("These are the two header names that match the
-        example in the shinycustomheader.py plugin. For some reason it will not
-	work if you add the customer header 'customheader', but almost anything
-	else does."),
+        example in the shinycustomheader.py plugin."),
+  helpText("Note that if you leave one of these headers out of the white-list in
+           shiny-server.conf, no content will be displayed here."),
 	h5("http_something content:"),
 	textOutput("somethingcontent"),
 	h5("http_username content:"),
